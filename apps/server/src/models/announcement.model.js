@@ -28,12 +28,13 @@ const AnnouncementSchema = new Schema({
     }
 })
 
-
-
+// add middleware to set createdAt before saving
 AnnouncementSchema.pre('save', async function (next) {
     this.createdAt = Date.now();
     next();    
 });
+
+//TODO: add updatedAt
 
 module.exports = mongoose.model('Announcement', AnnouncementSchema);
 
