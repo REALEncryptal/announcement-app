@@ -1,0 +1,25 @@
+.postsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.postCard {
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--mantine-color-gray-3);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.postCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  border-color: var(--mantine-color-gray-4);
+}
+
+.emptyState {
+  padding: 3rem 0;
+  text-align: center;
+}

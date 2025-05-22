@@ -1,5 +1,5 @@
 {
-  "name": "announcement-app",
+  "name": "mused",
   "private": true,
   "scripts": {
     "build": "turbo run build",
@@ -20,5 +20,9 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "@mantine/modals": "^8.0.1",
+    "passport": "^0.7.0"
+  }
 }

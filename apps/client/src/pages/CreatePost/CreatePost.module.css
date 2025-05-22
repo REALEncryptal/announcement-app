@@ -1,0 +1,11 @@
+.title {
+    @media (max-width: 750px) {
+        display: none;
+    }
+}
+
+.backspan {
+    @media (max-width: 500px) {
+        display: none;
+    }
+}
